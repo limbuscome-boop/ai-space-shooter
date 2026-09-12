@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AI 스페이스 슈터 - Space Shooter Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AI 스페이스 슈터</h1>
+            <p class="subtitle">마우스나 터치로 조종하세요!</p>
+        </header>
+
+        <div class="game-wrapper">
+            <div id="ui" class="ui-panel">
+                <div class="ui-item">점수: <span id="score">0</span></div>
+                <div class="ui-item">생명력: <span id="lives">3</span></div>
+                <div class="ui-item">레벨: <span id="level">1</span></div>
+            </div>
+            <canvas id="gameCanvas" width="400" height="520"></canvas>
+            <div id="ad-container" class="ad-banner">
+                [광고 배너 영역]
+            </div>
+        </div>
+
+        <div class="controls">
+            <h2>게임 조작법</h2>
+            <ul>
+                <li>🖱️ <strong>마우스</strong>: 플레이어 좌우 이동</li>
+                <li>📱 <strong>터치</strong>: 손가락으로 좌우 이동</li>
+                <li>🎮 자동 발사 (수동 조작 불필요)</li>
+            </ul>
+        </div>
+
+        <div class="stats">
+            <h2>게임 정보</h2>
+            <p>적들을 피하고 총알로 격추하세요!</p>
+            <p>적 1마리 = <strong>100점</strong></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
